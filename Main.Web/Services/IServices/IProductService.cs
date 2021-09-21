@@ -1,9 +1,12 @@
 ﻿using Main.Web.Models;
 using System.Threading.Tasks;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Main.Web.Services.IServices
 {
-    public interface IProductServices
+    public interface IProductService
     {
         Task<T> GetAllProductsAsync<T>();
         Task<T> GetProductsByIdAsync<T>(int id);
